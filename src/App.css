@@ -1,0 +1,16 @@
+iframe {
+  height: 46.5vh;
+  width: inherit;
+  border: 1px solid #42a5f5;
+  padding-right: 3px;
+  padding-bottom: 5px;
+}
+
+h4 {
+  text-align: center;
+}
+
+#visWrapper {
+  padding-left: 0px;
+  padding-right: 10px;
+}
