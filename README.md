@@ -2,8 +2,6 @@
 
 The Custom Visualization Builder (CVB) is a playground that gives developers an environment to build and test their custom visualization before adding it into [Looker](https://www.looker.com/).
 
-It is currently hosted [here](cig.c.googlers.com:3000/). (To be modified after review so that we can use GitHub pages)
-
 You can read more on how to develop a custom visualization for the Looker Marketplace [here](https://cloud.google.com/looker/docs/marketplace-develop-visualization)
 
 ## Support
