@@ -61,9 +61,9 @@ const Visualization = ({ data, query, deps, jsCode, reload }: Viz) => {
                 }
           </style>
 
-          <script type="text/javascript" src="/vizsetup.js"></script>
+          <script type="text/javascript" src="https://looker-open-source.github.io/custom-viz-builder/vizsetup.js"></script>
 
-          <script type="text/javascript" src="/sandy.js"></script>
+          <script type="text/javascript" src="https://looker-open-source.github.io/custom-viz-builder/sandy.js"></script>
 
       </head>
 

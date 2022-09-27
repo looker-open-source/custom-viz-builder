@@ -2,6 +2,7 @@
   "name": "vis-builder",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://looker-open-source.github.io/custom-viz-builder",
   "dependencies": {
     "@codemirror/lang-javascript": "^6.0.2",
     "@emotion/react": "^11.10.4",
@@ -26,9 +27,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf docs && react-scripts build && mv build docs",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "raw-loader": "^4.0.2"
   }
 }
