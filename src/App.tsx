@@ -59,7 +59,7 @@ const App = () => {
   const [newJS, setNewJS] = useState({ current: initJsCode, hasChanged: false })
 
   const depsContainer = createContainer(editorDeps, DEPS, 3, setNewDeps)
-  const jsContainer = createContainer(editorJS, initJsCode, 120, setNewJS, true)
+  const jsContainer = createContainer(editorJS, initJsCode, 135, setNewJS, true)
   const queryContainer = createContainer(editorQueryRes, query, 3, setNewQuery)
   const dataContainer = createContainer(editorData, data, 3, setNewData)
 
@@ -143,8 +143,6 @@ const App = () => {
             Rendered Visualization
           </Typography>
           <Container maxWidth="xl" component="div" id="visWrapper">
-            <div id="vis" style={{ overflow: 'scroll' }} />
-
             <Visualization
               data={newData.validEntry !== '' ? newData.validEntry : data}
               query={newQuery.validEntry !== '' ? newQuery.validEntry : query}
