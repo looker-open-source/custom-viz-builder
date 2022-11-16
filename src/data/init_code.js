@@ -15,10 +15,11 @@
  */
 
 let initJsCode = `/**
- * Welcome to the Looker Visualization Builder! Please refer to the following resources 
+ * Welcome to the Looker Custom Visualization Builder! Please refer to the following resources 
  * to help you write your visualization:
  *  - API Documentation - https://github.com/looker/custom_visualizations_v2/blob/master/docs/api_reference.md
  *  - Example Visualizations - https://github.com/looker/custom_visualizations_v2/tree/master/src/examples
+ *  - How to use the CVB - https://developers.looker.com/marketplace/tutorials/about-custom-viz-builder
  **/
 
 const visObject = {

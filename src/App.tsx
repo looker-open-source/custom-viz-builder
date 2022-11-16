@@ -28,6 +28,8 @@ import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
 import Box from '@mui/material/Box'
 import initJsCode from './data/init_code.js'
+import HelpCenterIcon from '@mui/icons-material/HelpCenter'
+import Tooltip from '@mui/material/Tooltip/Tooltip'
 
 let query = require('./data/query_response.json')
 let data = require('./data/raw_data.json')
@@ -75,7 +77,7 @@ const App = () => {
       <Grid container spacing={0}>
         <Grid
           item
-          xs={11}
+          xs={10}
           sx={{
             display: 'flex',
             alignItems: 'center',
@@ -102,6 +104,24 @@ const App = () => {
             <Button variant="contained" onClick={runVisualization}>
               RUN
             </Button>
+          </Box>
+        </Grid>
+        <Grid item xs={1}>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'left',
+              marginTop: 0.5,
+            }}
+          >
+            <Tooltip title="Learn how to use the CVB">
+              <Button
+                href="https://developers.looker.com/marketplace/tutorials/about-custom-viz-builder"
+                target="_blank"
+              >
+                <HelpCenterIcon sx={{ fontSize: 48 }} color="disabled" />
+              </Button>
+            </Tooltip>
           </Box>
         </Grid>
       </Grid>
